@@ -1,0 +1,104 @@
+.left{
+    overflow-y: hidden;
+    height: 94vh;
+
+    &:hover{
+        overflow-y: scroll;
+    }
+
+    .left__box-1{
+        padding: 1.5rem;
+        background-color: #fff; 
+        box-shadow: 1px 2px 5px rgb(225, 225, 225);
+        .box-1__content{
+            line-height: 1.5rem;
+            text-align: center;
+
+            img{
+                width: 90%;
+                margin-bottom: .5rem;
+                box-shadow:  10px 10px 0px #08a0e9, -10px -10px 0px #06a5ef71;border-radius: 61% 39% 36% 64% / 50% 50% 50% 50% ;
+            }
+
+            button{
+                width: 100%;
+                border: none;
+                padding: 1rem;
+                margin-top: .5rem;
+                border-radius: 50px;
+                background-color: #08a0e9;
+                color: #fff;
+                box-shadow: 1px 2px 5px rgb(225, 225, 225);
+            }
+        }
+    }
+
+    .left__box-2{
+        padding: .8rem;
+        margin-top: 1rem;
+        background-color: #fff;
+        box-shadow: 1px 2px 5px rgb(225, 225, 225);
+        .left-2__top{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            span{
+                font-size: 13px;
+                color: #08a0e9;
+            }
+        }
+
+        .left-2__list{
+          
+            hr{
+                margin: .5rem;
+            }
+
+            .left__person{
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+                .avatar{
+                padding: 1.8rem;
+                border-radius: 50%;
+                background-image: url(../images/te6.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            .person__info{
+                line-height: 1.6rem;
+                span{
+                    color: grey;
+                    font-size: 13px;
+                }
+                button{
+                    border: 1px solid #08a0e9;
+                    border-radius: 50px;
+                    color: #08a0e9;
+                    padding: .6rem 2rem;
+                    background-color: transparent;
+                }
+            }
+
+            }
+        }
+
+        .bottom{
+            padding: 1rem;
+        }
+    }
+
+    .left__box-3{
+        padding: 1rem;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+        background-color: #fff;
+        box-shadow: 1px 2px 5px rgb(225, 225, 225);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .left{
+      display: none;
+    }
+   }

@@ -1,0 +1,29 @@
+#floating-nav{
+  background: #fff;
+  width: 100%;
+  display: block;
+  padding: .6rem 1.7rem;
+  box-shadow: 3px 5px 10px grey;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  bottom: 0;
+  display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  #floating-nav {
+    display: flex;
+    width: 100%;
+
+    img{
+      width: 20px;
+    }
+  }
+}/*# sourceMappingURL=floating.css.map */

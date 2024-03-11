@@ -1,0 +1,113 @@
+@import "elements";
+
+header{
+    box-shadow: 1px 2px 5px rgb(180, 180, 180); 
+    background-color: #fff; 
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem;
+        align-items: center;
+        margin: 0 auto;
+        width: 95%;
+
+       
+    
+        ul{
+            display: flex;
+            gap: 2rem;
+            
+            li{
+                list-style: none;
+                transition: all 500ms ease;
+                cursor: pointer; 
+                font-weight: 400;
+                &:hover{
+                    color: #08a0e9;
+                }
+            }
+        }
+
+        .logo{
+            width: 50px;
+            z-index: 11;
+
+            img{
+             color: blue;
+            }
+
+            .foryou{
+                display: none;
+                border-bottom: 2px solid #08a0e9;
+                cursor: pointer;
+            }
+        }
+    
+        .avatar{
+           padding: 1.5rem;
+           border-radius: 50%;
+           background-image: url(../images/about-img.jpg);
+           background-position: center;
+           background-size: cover;
+        }
+    
+        .input__search{
+            display: flex;
+            gap: .9rem;
+    
+            input{
+                border: none;
+                border-radius: 10px;
+                background-color: rgb(228, 228, 228);
+                padding: 0 3rem;
+    
+    
+                ::placeholder{
+                    color: grey;
+                    font-weight: 700;
+                    font-family: 12px;
+                }
+            }
+    
+            button{
+                @extend %button;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        height: 10vh;
+        
+        nav{
+            padding: 0;
+            //flex-direction: column;
+           
+            ul{
+                display: none;
+            }
+             .logo{
+                padding-top: 1.5rem;
+                align-items: center;
+                margin: 0 auto;
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                img{
+                    width: 45px;
+                }
+                .foryou{
+                    display: block;
+                }
+             }
+            .input__search{
+                display: none;
+            }
+        }
+    }
+}
